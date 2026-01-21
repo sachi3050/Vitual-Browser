@@ -21,7 +21,7 @@ RUN set -eux; apt-get update; \
     chown -R neko:neko /home/neko/.mozilla/firefox/profile.default; \
     #
     # clean up
-    apt-get --purge autoremove -y xz-utils bzip2; \
+    apt-get --purge autoremove -y xz-utils; \
     apt-get clean -y; \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
